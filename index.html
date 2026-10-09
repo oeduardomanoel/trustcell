@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Trustcell Assistência iPhone</title>
+<meta name="description" content="Assistência técnica de iPhone a domicílio em Balneário Piçarras e região. Reparo feito dentro do carro, na sua frente, com garantia de 90 dias e diagnóstico sem custo.">
+<meta name="theme-color" content="#06080a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Trustcell · Assistência de iPhone na sua porta">
+<meta property="og:description" content="Quebrou? A gente resolve na sua porta. Reparo no carro, na sua frente, com 90 dias de garantia.">
+<meta property="og:image" content="assets/img/logo-coin.png">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobilePhoneStore",
+  "name": "Trustcell",
+  "description": "Assistência técnica de iPhone a domicílio. Reparo feito dentro do carro, na frente do cliente.",
+  "telephone": "+55 47 99646-9347",
+  "image": "assets/img/logo-coin.png",
+  "address": { "@type": "PostalAddress", "addressLocality": "Balneário Piçarras", "addressRegion": "SC", "addressCountry": "BR" },
+  "areaServed": "Balneário Piçarras e região",
+  "sameAs": ["https://www.instagram.com/trustcelll/"]
+}
+</script>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- PRELOADER -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__inner">
+    <img class="loader__coin" src="assets/img/logo-coin.webp" alt="" width="120" height="120">
+    <div class="loader__meta">
+      <span class="loader__label">Abrindo a bancada</span>
+      <span class="loader__count"><span id="loaderCount">0</span>%</span>
+    </div>
+    <div class="loader__bar"><span id="loaderBar"></span></div>
+  </div>
+</div>
+
+<!-- CURSOR -->
+<div class="cursor" aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"><span class="cursor__label"></span></div></div>
+
+<!-- HEADER -->
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#topo" aria-label="Trustcell, voltar ao topo">
+    <img src="assets/img/logo-coin.webp" alt="" width="40" height="40">
+    <span class="nav__word">TRUST<b>CELL</b></span>
+  </a>
+  <nav class="nav__links" aria-label="Principal">
+    <a href="#reparo" class="link-roll"><span data-text="O reparo">O reparo</span></a>
+    <a href="#servicos" class="link-roll"><span data-text="Serviços">Serviços</span></a>
+    <a href="#como-funciona" class="link-roll"><span data-text="Como funciona">Como funciona</span></a>
+    <a href="#duvidas" class="link-roll"><span data-text="Dúvidas">Dúvidas</span></a>
+  </nav>
+  <a class="btn btn--steel btn--sm nav__cta" href="#orcamento" data-magnetic data-cursor="Orçar">
+    <span class="btn__label">Fazer orçamento</span>
+    <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+  </a>
+  <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <nav class="menu__links" aria-label="Menu">
+    <a href="#reparo"><small>01</small>O reparo</a>
+    <a href="#servicos"><small>02</small>Serviços</a>
+    <a href="#como-funciona"><small>03</small>Como funciona</a>
+    <a href="#orcamento"><small>04</small>Orçamento</a>
+    <a href="#duvidas"><small>05</small>Dúvidas</a>
+  </nav>
+  <div class="menu__foot">
+    <a href="https://wa.me/5547996469347" target="_blank" rel="noopener">WhatsApp (47) 99646-9347</a>
+    <a href="https://www.instagram.com/trustcelll/" target="_blank" rel="noopener">@trustcelll</a>
+  </div>
+</div>
+
+<main id="topo">
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="hero__grid" aria-hidden="true"></div>
+  <svg class="hero__gear" id="heroGear" viewBox="0 0 400 400" aria-hidden="true"></svg>
+
+  <div class="hero__copy">
+    <p class="eyebrow hero__eyebrow"><span class="pulse"></span>Assistência de iPhone a domicílio · Piçarras-SC</p>
+    <h1 class="hero__title">
+      <span class="line"><span class="line__in metal">Quebrou?</span></span>
+      <span class="line"><span class="line__in">A gente resolve</span></span>
+      <span class="line"><span class="line__in">na sua <em>porta.</em></span></span>
+    </h1>
+    <p class="hero__sub">Vamos até você e fazemos o reparo dentro do carro, na sua frente. Peça de qualidade, 90 dias de garantia e, na maioria dos casos, o iPhone volta pra sua mão no mesmo dia.</p>
+    <div class="hero__ctas">
+      <a class="btn btn--steel" href="#orcamento" data-magnetic data-cursor="Orçar">
+        <span class="btn__label">Montar meu orçamento</span>
+        <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="btn btn--ghost" href="https://wa.me/5547996469347?text=Ol%C3%A1%2C%20Trustcell!%20Meu%20iPhone%20precisa%20de%20reparo." target="_blank" rel="noopener" data-magnetic data-cursor="Chamar">
+        <svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5.1 5.2-1.4A9.9 9.9 0 1 0 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.1.8.83-3-.2-.31a8.2 8.2 0 1 1 6.97 3.84Zm4.5-6.14c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.55.12-.17.25-.64.8-.78.97-.14.16-.29.18-.53.06a6.7 6.7 0 0 1-3.34-2.92c-.25-.43.25-.4.72-1.34.08-.16.04-.3-.02-.43-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.41-.55-.42h-.47a.9.9 0 0 0-.65.3 2.74 2.74 0 0 0-.85 2.03 4.76 4.76 0 0 0 1 2.53 10.9 10.9 0 0 0 4.17 3.68c1.55.67 2.16.73 2.93.61.47-.07 1.46-.6 1.66-1.17.2-.58.2-1.07.15-1.17-.06-.1-.22-.16-.47-.28Z"/></svg>
+        <span class="btn__label">Chamar no WhatsApp</span>
+      </a>
+    </div>
+    <ul class="hero__proof" aria-label="Garantias">
+      <li><b>90 dias</b><span>de garantia</span></li>
+      <li><b>R$ 0</b><span>no diagnóstico</span></li>
+      <li><b>Mesmo dia</b><span>na maioria dos reparos</span></li>
+    </ul>
+  </div>
+
+  <div class="hero__visual">
+    <div class="stage stage--hero" id="heroStage">
+      <div class="phone" id="heroPhone" data-phone="hero"></div>
+      <div class="chip chip--a" data-depth="0.6"><span class="chip__dot chip__dot--warn"></span>Tela trincada<small>diagnóstico grátis</small></div>
+      <div class="chip chip--b" data-depth="1.1"><span class="chip__dot"></span>Técnico a caminho<small>reparo no carro</small></div>
+      <div class="chip chip--c" data-depth="0.8"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 4.4 3.4 8.3 8 9 4.6-.7 8-4.6 8-9V6l-8-3Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>90 dias<small>de garantia</small></div>
+    </div>
+  </div>
+
+  <a class="hero__scroll" href="#reparo" aria-label="Rolar para ver o reparo">
+    <span class="hero__scroll-line"></span>
+    <span>Role pra ver o reparo</span>
+  </a>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-label="Serviços atendidos">
+  <div class="marquee__track" id="marquee">
+    <div class="marquee__group">
+      <span>Troca de tela</span><i></i><span>Bateria</span><i></i><span>Vidro traseiro</span><i></i><span>Câmera e lente</span><i></i><span>Conector de carga</span><i></i><span>Celular molhado</span><i></i><span>iPhone 11 ao 16 Pro Max</span><i></i>
+    </div>
+    <div class="marquee__group" aria-hidden="true">
+      <span>Troca de tela</span><i></i><span>Bateria</span><i></i><span>Vidro traseiro</span><i></i><span>Câmera e lente</span><i></i><span>Conector de carga</span><i></i><span>Celular molhado</span><i></i><span>iPhone 11 ao 16 Pro Max</span><i></i>
+    </div>
+  </div>
+</div>
+
+<!-- STATEMENT -->
+<section class="statement section" id="na-porta">
+  <p class="eyebrow">A bancada vai até você</p>
+  <p class="statement__text" id="statementText">Você não precisa sair de casa nem deixar o celular dias numa loja. A gente estaciona na sua porta, abre o aparelho na bancada montada dentro do carro e você acompanha o serviço do começo ao fim.</p>
+  <div class="stats">
+    <div class="stat" data-tilt>
+      <span class="stat__num"><span data-count="90">90</span><small>dias</small></span>
+      <span class="stat__label">de garantia em todos os serviços</span>
+    </div>
+    <div class="stat" data-tilt>
+      <span class="stat__num">Mesmo<small>dia</small></span>
+      <span class="stat__label">é quando sai a maioria dos reparos</span>
+    </div>
+    <div class="stat" data-tilt>
+      <span class="stat__num"><small>R$</small><span data-count="0">0</span></span>
+      <span class="stat__label">pelo diagnóstico, antes de qualquer reparo</span>
+    </div>
+    <div class="stat" data-tilt>
+      <span class="stat__num"><span data-count="5">5</span><small>estrelas</small></span>
+      <span class="stat__label">nas avaliações de quem já atendemos</span>
+    </div>
+  </div>
+</section>
+
+<!-- ANATOMIA DO REPARO (PINNED) -->
+<section class="repair" id="reparo">
+  <div class="repair__pin" id="repairPin">
+    <div class="repair__head">
+      <p class="eyebrow">O reparo, passo a passo</p>
+      <h2 class="h2">O que acontece <span class="metal">dentro do carro</span></h2>
+    </div>
+    <ol class="repair__steps" id="repairSteps">
+      <li class="rstep is-active">
+        <span class="rstep__n">01</span>
+        <div><h3>Diagnóstico</h3><p>Antes de abrir, a gente testa tela, bateria, câmeras e carga. Você sabe o problema e o valor antes de tudo, e o diagnóstico não custa nada.</p></div>
+      </li>
+      <li class="rstep">
+        <span class="rstep__n">02</span>
+        <div><h3>Abertura</h3><p>O aparelho é aberto com a ferramenta certa e calor controlado, ali na sua frente. Nada sai do seu campo de visão.</p></div>
+      </li>
+      <li class="rstep">
+        <span class="rstep__n">03</span>
+        <div><h3>Troca da peça</h3><p>Sai a peça danificada e entra a nova, original ou compatível de alta qualidade, conforme o combinado no orçamento.</p></div>
+      </li>
+      <li class="rstep">
+        <span class="rstep__n">04</span>
+        <div><h3>Teste com você</h3><p>Touch, brilho, câmeras, áudio e carga. Tudo testado com você olhando, antes de fechar.</p></div>
+      </li>
+      <li class="rstep">
+        <span class="rstep__n">05</span>
+        <div><h3>Entrega com garantia</h3><p>Aparelho fechado, limpo e de volta na sua mão, com 90 dias de garantia no serviço.</p></div>
+      </li>
+    </ol>
+    <div class="repair__progress" aria-hidden="true"><span id="repairBar"></span></div>
+    <div class="repair__visual">
+      <div class="stage stage--repair" id="repairStage">
+        <div class="scanline" id="scanline" aria-hidden="true"></div>
+        <div class="phone phone--repair" id="repairPhone" data-phone="repair"></div>
+        <div class="hud" id="hud" aria-hidden="true">
+          <span class="hud__row hud__row--bad">Tela <b>trincada</b></span>
+          <span class="hud__row">Bateria <b>81%</b></span>
+          <span class="hud__row">Câmeras <b>ok</b></span>
+          <span class="hud__row">Carga <b>ok</b></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="services section" id="servicos">
+  <div class="section__head">
+    <p class="eyebrow">Serviços</p>
+    <h2 class="h2">O que a gente <span class="metal">conserta</span></h2>
+    <p class="section__lede">Especialistas em iPhone, do 11 ao 16 Pro Max. Escolha o problema e monte o orçamento em menos de um minuto.</p>
+  </div>
+  <ul class="svc" id="svcList">
+    <li class="svc__row" data-service="Troca de tela" data-hint="Trinco, mancha, linhas na imagem ou touch que não responde.">
+      <a href="#orcamento" class="svc__link" data-cursor="Orçar">
+        <svg class="svc__ico" viewBox="0 0 48 48" aria-hidden="true"><rect x="13" y="4" width="22" height="40" rx="5"/><path d="M19 8h10M18 18l6 6-4 4 8 8"/></svg>
+        <span class="svc__title">Troca de tela</span>
+        <span class="svc__desc">Trinco, mancha, linhas na imagem ou touch que não responde.</span>
+        <span class="svc__go">Orçar <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+    </li>
+    <li class="svc__row" data-service="Troca de bateria" data-hint="Descarregando rápido, desligando sozinho ou saúde da bateria baixa.">
+      <a href="#orcamento" class="svc__link" data-cursor="Orçar">
+        <svg class="svc__ico" viewBox="0 0 48 48" aria-hidden="true"><rect x="12" y="9" width="24" height="35" rx="4"/><path d="M19 5h10M25 16l-5 11h8l-5 11"/></svg>
+        <span class="svc__title">Bateria</span>
+        <span class="svc__desc">Descarregando rápido, desligando sozinho ou saúde da bateria baixa.</span>
+        <span class="svc__go">Orçar <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+    </li>
+    <li class="svc__row" data-service="Vidro traseiro" data-hint="Traseira trincada ou estilhaçada.">
+      <a href="#orcamento" class="svc__link" data-cursor="Orçar">
+        <svg class="svc__ico" viewBox="0 0 48 48" aria-hidden="true"><rect x="13" y="4" width="22" height="40" rx="5"/><rect x="16" y="8" width="9" height="9" rx="3"/><path d="M27 22l-4 6 6 3-3 9"/></svg>
+        <span class="svc__title">Vidro traseiro</span>
+        <span class="svc__desc">Traseira trincada ou estilhaçada.</span>
+        <span class="svc__go">Orçar <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+    </li>
+    <li class="svc__row" data-service="Câmera ou lente" data-hint="Lente trincada, foto embaçada ou câmera que não foca.">
+      <a href="#orcamento" class="svc__link" data-cursor="Orçar">
+        <svg class="svc__ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="14"/><circle cx="24" cy="24" r="7"/><path d="M24 10v4M24 34v4M10 24h4M34 24h4"/></svg>
+        <span class="svc__title">Câmera e lente</span>
+        <span class="svc__desc">Lente trincada, foto embaçada ou câmera que não foca.</span>
+        <span class="svc__go">Orçar <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+    </li>
+    <li class="svc__row" data-service="Conector de carga" data-hint="Só carrega numa posição do cabo, ou não carrega.">
+      <a href="#orcamento" class="svc__link" data-cursor="Orçar">
+        <svg class="svc__ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M17 4v10M31 4v10M13 14h22v8a11 11 0 0 1-22 0v-8ZM24 33v11"/></svg>
+        <span class="svc__title">Conector de carga</span>
+        <span class="svc__desc">Só carrega numa posição do cabo, ou não carrega.</span>
+        <span class="svc__go">Orçar <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+    </li>
+    <li class="svc__row" data-service="Celular molhado" data-hint="Caiu na água? Não ligue, não teste e não coloque pra carregar.">
+      <a href="#orcamento" class="svc__link" data-cursor="Orçar">
+        <svg class="svc__ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4s13 15 13 25a13 13 0 0 1-26 0C11 19 24 4 24 4Z"/><path d="M18 30a6 6 0 0 0 6 6"/></svg>
+        <span class="svc__title">Celular molhado</span>
+        <span class="svc__desc">Caiu na água? Não ligue, não teste e não coloque pra carregar.</span>
+        <span class="svc__go">Orçar <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+    </li>
+  </ul>
+  <div class="svc-preview" id="svcPreview" aria-hidden="true">
+    <div class="svc-preview__card">
+      <span class="svc-preview__tag">Sintoma</span>
+      <p class="svc-preview__text" id="svcPreviewText"></p>
+      <span class="svc-preview__foot">Diagnóstico sem custo</span>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA (HORIZONTAL) -->
+<section class="how" id="como-funciona">
+  <div class="how__pin" id="howPin">
+    <div class="how__head">
+      <p class="eyebrow">Como funciona</p>
+      <h2 class="h2">Do orçamento à entrega, <span class="metal">sem sair de casa</span></h2>
+    </div>
+    <div class="how__track" id="howTrack">
+      <article class="hcard">
+        <span class="hcard__n">01</span>
+        <div class="hcard__art">
+          <div class="mini-form">
+            <span class="mini-form__label">Aparelho</span>
+            <span class="mini-form__field is-on">iPhone 13 Pro</span>
+            <span class="mini-form__label">Reparo</span>
+            <span class="mini-form__field is-on">Troca de tela</span>
+            <span class="mini-form__btn">Enviar</span>
+          </div>
+        </div>
+        <h3>Monte o orçamento</h3>
+        <p>Escolha o modelo e o problema aqui no site. Leva menos de um minuto.</p>
+      </article>
+      <article class="hcard">
+        <span class="hcard__n">02</span>
+        <div class="hcard__art">
+          <div class="mini-chat">
+            <span class="bubble bubble--me">Oi! iPhone 13 Pro, troca de tela.</span>
+            <span class="bubble">Fechado. Amanhã à tarde fica bom pra você?</span>
+            <span class="bubble bubble--me">Perfeito 🙌</span>
+          </div>
+        </div>
+        <h3>Combine o horário</h3>
+        <p>No WhatsApp a gente confirma o valor, o dia e o endereço.</p>
+      </article>
+      <article class="hcard">
+        <span class="hcard__n">03</span>
+        <div class="hcard__art">
+          <svg class="route" viewBox="0 0 320 180" aria-hidden="true">
+            <path class="route__base" d="M20 150 C 80 150, 70 60, 140 70 S 220 140, 300 40"/>
+            <path class="route__line" id="routeLine" d="M20 150 C 80 150, 70 60, 140 70 S 220 140, 300 40"/>
+            <circle class="route__start" cx="20" cy="150" r="6"/>
+            <g class="route__pin" transform="translate(300 40)"><circle r="14"/><circle r="5"/></g>
+          </svg>
+        </div>
+        <h3>A gente chega</h3>
+        <p>Estacionamos na sua porta, em casa ou no trabalho.</p>
+      </article>
+      <article class="hcard">
+        <span class="hcard__n">04</span>
+        <div class="hcard__art">
+          <div class="seal">
+            <img src="assets/img/logo-coin.webp" alt="" width="120" height="120" loading="lazy">
+            <span class="seal__ring">GARANTIA · 90 DIAS · TRUSTCELL · REPARO NA SUA FRENTE · </span>
+          </div>
+        </div>
+        <h3>Reparo na sua frente</h3>
+        <p>Serviço feito no carro e iPhone de volta com 90 dias de garantia.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ORÇAMENTO -->
+<section class="quote section" id="orcamento">
+  <div class="section__head">
+    <p class="eyebrow">Orçamento</p>
+    <h2 class="h2">Monte seu orçamento <span class="metal">em 4 passos</span></h2>
+    <p class="section__lede">Preencha aqui e envie direto pro nosso WhatsApp. A resposta vem com valor e horário.</p>
+  </div>
+
+  <div class="quote__grid">
+    <form class="wiz" id="wizard" novalidate>
+      <div class="wiz__top">
+        <ol class="wiz__dots" id="wizDots">
+          <li class="is-active"><span>1</span>Aparelho</li>
+          <li><span>2</span>Reparo</li>
+          <li><span>3</span>Seus dados</li>
+          <li><span>4</span>Quando</li>
+        </ol>
+        <div class="wiz__bar"><span id="wizBar"></span></div>
+      </div>
+
+      <div class="wiz__viewport">
+        <!-- 1 -->
+        <fieldset class="wiz__step is-active" data-step="1">
+          <legend class="wiz__q">Qual é o seu iPhone?</legend>
+          <div class="gens" id="gens" role="tablist" aria-label="Geração"></div>
+          <div class="models" id="models"></div>
+          <div class="field field--other" id="otherModelWrap" hidden>
+            <label for="otherModel">Qual modelo?</label>
+            <input id="otherModel" type="text" placeholder="Ex.: iPhone XR, Galaxy A16" autocomplete="off">
+          </div>
+        </fieldset>
+        <!-- 2 -->
+        <fieldset class="wiz__step" data-step="2">
+          <legend class="wiz__q">O que precisa consertar?<small>Pode marcar mais de um.</small></legend>
+          <div class="repairs" id="repairs"></div>
+        </fieldset>
+        <!-- 3 -->
+        <fieldset class="wiz__step" data-step="3">
+          <legend class="wiz__q">Pra quem e onde?</legend>
+          <div class="field">
+            <label for="fName">Seu nome</label>
+            <input id="fName" type="text" autocomplete="given-name" placeholder="Como podemos te chamar?">
+          </div>
+          <div class="field">
+            <label for="fPlace">Bairro e cidade</label>
+            <input id="fPlace" type="text" autocomplete="address-level2" placeholder="Ex.: Centro, Balneário Piçarras">
+          </div>
+          <div class="field">
+            <label for="fNote">Algo mais? <i>(opcional)</i></label>
+            <textarea id="fNote" rows="2" placeholder="Ex.: caiu ontem, o touch falha no canto"></textarea>
+          </div>
+        </fieldset>
+        <!-- 4 -->
+        <fieldset class="wiz__step" data-step="4">
+          <legend class="wiz__q">Quando fica bom pra você?</legend>
+          <span class="wiz__sub">Dia</span>
+          <div class="pills" id="days">
+            <button type="button" class="pill" data-v="Hoje">Hoje</button>
+            <button type="button" class="pill" data-v="Amanhã">Amanhã</button>
+            <button type="button" class="pill" data-v="Outro dia">Outro dia</button>
+          </div>
+          <div class="field" id="dateWrap" hidden>
+            <label for="fDate">Escolha a data</label>
+            <input id="fDate" type="date">
+          </div>
+          <span class="wiz__sub">Turno</span>
+          <div class="pills" id="shifts">
+            <button type="button" class="pill" data-v="Manhã">Manhã</button>
+            <button type="button" class="pill" data-v="Tarde">Tarde</button>
+            <button type="button" class="pill" data-v="Noite">Noite</button>
+          </div>
+        </fieldset>
+      </div>
+
+      <p class="wiz__err" id="wizErr" role="alert"></p>
+
+      <div class="wiz__nav">
+        <button type="button" class="btn btn--ghost btn--sm" id="wizBack" disabled>Voltar</button>
+        <button type="button" class="btn btn--steel" id="wizNext" data-magnetic>
+          <span class="btn__label">Continuar</span>
+          <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+        <a class="btn btn--wa" id="wizSend" href="https://wa.me/5547996469347" target="_blank" rel="noopener" hidden data-magnetic>
+          <svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5.1 5.2-1.4A9.9 9.9 0 1 0 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.1.8.83-3-.2-.31a8.2 8.2 0 1 1 6.97 3.84Zm4.5-6.14c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.55.12-.17.25-.64.8-.78.97-.14.16-.29.18-.53.06a6.7 6.7 0 0 1-3.34-2.92c-.25-.43.25-.4.72-1.34.08-.16.04-.3-.02-.43-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.41-.55-.42h-.47a.9.9 0 0 0-.65.3 2.74 2.74 0 0 0-.85 2.03 4.76 4.76 0 0 0 1 2.53 10.9 10.9 0 0 0 4.17 3.68c1.55.67 2.16.73 2.93.61.47-.07 1.46-.6 1.66-1.17.2-.58.2-1.07.15-1.17-.06-.1-.22-.16-.47-.28Z"/></svg>
+          <span class="btn__label">Enviar pelo WhatsApp</span>
+        </a>
+      </div>
+    </form>
+
+    <aside class="ticket" id="ticket" aria-label="Resumo do orçamento">
+      <div class="ticket__head">
+        <img src="assets/img/logo-coin.webp" alt="" width="44" height="44" loading="lazy">
+        <div>
+          <span class="ticket__brand">TRUSTCELL</span>
+          <span class="ticket__kind">Ordem de serviço</span>
+        </div>
+        <span class="ticket__no" id="osNo">Nº TC-0000</span>
+      </div>
+      <dl class="ticket__rows">
+        <div><dt>Data</dt><dd id="tDate">—</dd></div>
+        <div><dt>Aparelho</dt><dd id="tModel" class="is-empty">a escolher</dd></div>
+        <div><dt>Reparo</dt><dd id="tRepair" class="is-empty">a escolher</dd></div>
+        <div><dt>Cliente</dt><dd id="tName" class="is-empty">—</dd></div>
+        <div><dt>Local</dt><dd id="tPlace" class="is-empty">—</dd></div>
+        <div><dt>Quando</dt><dd id="tWhen" class="is-empty">—</dd></div>
+      </dl>
+      <div class="ticket__perf" aria-hidden="true"></div>
+      <dl class="ticket__rows ticket__rows--fixed">
+        <div><dt>Diagnóstico</dt><dd>Sem custo</dd></div>
+        <div><dt>Garantia</dt><dd>90 dias</dd></div>
+        <div><dt>Atendimento</dt><dd>Na sua porta</dd></div>
+      </dl>
+      <div class="ticket__barcode" aria-hidden="true"></div>
+      <span class="ticket__foot">Piçarras-SC · (47) 99646-9347</span>
+    </aside>
+  </div>
+</section>
+
+<!-- BANCADA -->
+<section class="bench section" id="bancada">
+  <div class="section__head section__head--row">
+    <div>
+      <p class="eyebrow">Direto da bancada</p>
+      <h2 class="h2">Serviço de verdade, <span class="metal">sem filtro</span></h2>
+    </div>
+    <a class="btn btn--ghost btn--sm" href="https://www.instagram.com/trustcelll/" target="_blank" rel="noopener" data-magnetic data-cursor="Seguir">
+      <svg class="ig-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1"/></svg>
+      <span class="btn__label">@trustcelll</span>
+    </a>
+  </div>
+  <div class="bench__grid">
+    <figure class="shot shot--a" data-speed="-0.06">
+      <div class="shot__img"><img src="assets/img/bancada-traseira.webp" alt="iPhone com o vidro traseiro trincado na bancada" width="375" height="437" loading="lazy"></div>
+      <figcaption><span>Antes</span>Traseira trincada</figcaption>
+    </figure>
+    <figure class="shot shot--b" data-speed="0.08">
+      <div class="shot__img"><img src="assets/img/bancada-16promax.webp" alt="iPhone 16 Pro Max branco na mão do técnico" width="389" height="437" loading="lazy"></div>
+      <figcaption><span>Na mão</span>iPhone 16 Pro Max</figcaption>
+    </figure>
+    <figure class="shot shot--c" data-speed="-0.02">
+      <div class="shot__img"><img src="assets/img/bancada-abertura.webp" alt="Técnico trabalhando na manta de silicone azul da bancada" width="389" height="436" loading="lazy"></div>
+      <figcaption><span>Bancada</span>Galaxy A16 em atendimento</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq section" id="duvidas">
+  <div class="faq__grid">
+    <div class="section__head">
+      <p class="eyebrow">Dúvidas</p>
+      <h2 class="h2">Antes de <span class="metal">chamar</span></h2>
+      <p class="section__lede">Não achou sua resposta? Manda no WhatsApp, a gente responde rápido.</p>
+    </div>
+    <div class="acc" id="faq">
+      <details class="acc__item" open>
+        <summary>Vocês vão mesmo até a minha casa?<span class="acc__plus" aria-hidden="true"></span></summary>
+        <div class="acc__body"><p>Vamos. Atendemos a domicílio em Piçarras e região. O reparo é feito dentro do carro, estacionado na sua porta, e você acompanha tudo.</p></div>
+      </details>
+      <details class="acc__item">
+        <summary>Quanto tempo demora?<span class="acc__plus" aria-hidden="true"></span></summary>
+        <div class="acc__body"><p>A maioria dos reparos sai no mesmo dia do atendimento. No orçamento a gente já te passa a previsão do seu caso.</p></div>
+      </details>
+      <details class="acc__item">
+        <summary>Qual é a garantia?<span class="acc__plus" aria-hidden="true"></span></summary>
+        <div class="acc__body"><p>90 dias em todos os serviços.</p></div>
+      </details>
+      <details class="acc__item">
+        <summary>As peças são originais?<span class="acc__plus" aria-hidden="true"></span></summary>
+        <div class="acc__body"><p>Usamos peças originais e compatíveis de alta qualidade. Qual vai no seu aparelho fica combinado no orçamento.</p></div>
+      </details>
+      <details class="acc__item">
+        <summary>Quanto custa o diagnóstico?<span class="acc__plus" aria-hidden="true"></span></summary>
+        <div class="acc__body"><p>Nada. A gente avalia o aparelho sem custo antes de qualquer reparo.</p></div>
+      </details>
+      <details class="acc__item">
+        <summary>Meu celular caiu na água. E agora?<span class="acc__plus" aria-hidden="true"></span></summary>
+        <div class="acc__body"><p>Não ligue, não tente testar e não coloque pra carregar. Chama a gente no WhatsApp o quanto antes.</p></div>
+      </details>
+      <details class="acc__item">
+        <summary>Quais modelos vocês atendem?<span class="acc__plus" aria-hidden="true"></span></summary>
+        <div class="acc__body"><p>Somos especialistas em iPhone, do 11 ao 16 Pro Max. Tem outro modelo? Manda no WhatsApp que a gente avalia.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="final" id="contato">
+  <div class="final__bg" aria-hidden="true">
+    <div class="final__row" data-dir="-1"><span>QUEBROU? QUEBROU? QUEBROU? QUEBROU? </span><span>QUEBROU? QUEBROU? QUEBROU? QUEBROU? </span></div>
+    <div class="final__row" data-dir="1"><span>A GENTE RESOLVE · A GENTE RESOLVE · </span><span>A GENTE RESOLVE · A GENTE RESOLVE · </span></div>
+  </div>
+  <div class="final__inner">
+    <div class="final__coin" id="finalCoin"><img src="assets/img/logo-coin.webp" alt="Logo Trustcell" width="220" height="220" loading="lazy"></div>
+    <h2 class="final__title">Quebrou?<br><span class="metal">A gente resolve.</span></h2>
+    <p class="final__sub">Manda o modelo e o problema. A resposta chega no WhatsApp com valor e horário.</p>
+    <div class="final__ctas">
+      <a class="btn btn--wa btn--lg" href="https://wa.me/5547996469347?text=Ol%C3%A1%2C%20Trustcell!%20Quero%20um%20or%C3%A7amento." target="_blank" rel="noopener" data-magnetic data-cursor="Chamar">
+        <svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5.1 5.2-1.4A9.9 9.9 0 1 0 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.1.8.83-3-.2-.31a8.2 8.2 0 1 1 6.97 3.84Zm4.5-6.14c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.55.12-.17.25-.64.8-.78.97-.14.16-.29.18-.53.06a6.7 6.7 0 0 1-3.34-2.92c-.25-.43.25-.4.72-1.34.08-.16.04-.3-.02-.43-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.41-.55-.42h-.47a.9.9 0 0 0-.65.3 2.74 2.74 0 0 0-.85 2.03 4.76 4.76 0 0 0 1 2.53 10.9 10.9 0 0 0 4.17 3.68c1.55.67 2.16.73 2.93.61.47-.07 1.46-.6 1.66-1.17.2-.58.2-1.07.15-1.17-.06-.1-.22-.16-.47-.28Z"/></svg>
+        <span class="btn__label">Chamar no WhatsApp</span>
+      </a>
+      <button type="button" class="copy" id="copyPhone" data-cursor="Copiar">
+        <span class="copy__num">(47) 99646-9347</span>
+        <span class="copy__state" id="copyState">copiar</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__top">
+    <div class="foot__brand">
+      <img src="assets/img/logo-coin.webp" alt="" width="56" height="56" loading="lazy">
+      <p>Assistência técnica de iPhone a domicílio.<br>Reparo no carro, na sua frente.</p>
+    </div>
+    <div class="foot__cols">
+      <div>
+        <span class="foot__h">Atendimento</span>
+        <p>Balneário Piçarras e região<br>Santa Catarina</p>
+      </div>
+      <div>
+        <span class="foot__h">Contato</span>
+        <a href="https://wa.me/5547996469347" target="_blank" rel="noopener" class="link-roll"><span data-text="(47) 99646-9347">(47) 99646-9347</span></a>
+        <a href="https://www.instagram.com/trustcelll/" target="_blank" rel="noopener" class="link-roll"><span data-text="@trustcelll">@trustcelll</span></a>
+      </div>
+      <div>
+        <span class="foot__h">Navegação</span>
+        <a href="#servicos" class="link-roll"><span data-text="Serviços">Serviços</span></a>
+        <a href="#orcamento" class="link-roll"><span data-text="Orçamento">Orçamento</span></a>
+        <a href="#duvidas" class="link-roll"><span data-text="Dúvidas">Dúvidas</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="foot__word" aria-hidden="true"><span>TRUSTCELL</span></div>
+  <div class="foot__bottom">
+    <span>© <span id="year">2026</span> Trustcell</span>
+    <a href="#topo" class="foot__up">Voltar ao topo ↑</a>
+  </div>
+</footer>
+
+<a class="wa-float" id="waFloat" href="https://wa.me/5547996469347?text=Ol%C3%A1%2C%20Trustcell!" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5.1 5.2-1.4A9.9 9.9 0 1 0 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.1.8.83-3-.2-.31a8.2 8.2 0 1 1 6.97 3.84Zm4.5-6.14c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.55.12-.17.25-.64.8-.78.97-.14.16-.29.18-.53.06a6.7 6.7 0 0 1-3.34-2.92c-.25-.43.25-.4.72-1.34.08-.16.04-.3-.02-.43-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.41-.55-.42h-.47a.9.9 0 0 0-.65.3 2.74 2.74 0 0 0-.85 2.03 4.76 4.76 0 0 0 1 2.53 10.9 10.9 0 0 0 4.17 3.68c1.55.67 2.16.73 2.93.61.47-.07 1.46-.6 1.66-1.17.2-.58.2-1.07.15-1.17-.06-.1-.22-.16-.47-.28Z"/></svg>
+</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
