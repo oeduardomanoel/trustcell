@@ -372,14 +372,14 @@ main, .foot { overflow-x: clip; }
 .statement__text .w { display: inline-block; white-space: pre; }
 .stats { margin-top: clamp(64px, 9vw, 120px); display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
 .stat {
-  position: relative; display: grid; gap: 14px; align-content: space-between; min-height: 220px; padding: 26px; border-radius: var(--radius);
+  position: relative; display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; align-content: space-between; min-width: 0; min-height: 220px; padding: 26px; border-radius: var(--radius);
   background: var(--brushed); border: 1px solid var(--line); overflow: hidden; transform-style: preserve-3d; transition: border-color .4s;
 }
 .stat::before { content: ""; position: absolute; inset: 0; background: radial-gradient(400px circle at var(--mx, 50%) var(--my, 0%), rgba(143,225,255,.14), transparent 45%); opacity: 0; transition: opacity .4s; pointer-events: none; }
 .stat:hover { border-color: var(--line-hi); }
 .stat:hover::before { opacity: 1; }
 .stat__num { font-family: var(--f-display); font-stretch: 125%; font-variation-settings: "wdth" 125; font-weight: 800; font-size: clamp(2.6rem, 4.6vw, 4.2rem); line-height: .9; letter-spacing: -.03em; display: flex; align-items: baseline; gap: 8px; font-variant-numeric: tabular-nums; flex-wrap: wrap; }
-.stat__num small { font-size: .32em; letter-spacing: .02em; color: var(--steel-hi); font-weight: 600; text-transform: uppercase; }
+.stat__num small { font-size: .32em; line-height: 1.2; letter-spacing: .02em; color: var(--steel-hi); font-weight: 600; text-transform: uppercase; }
 .stat__label { color: var(--mute); font-size: .92rem; max-width: 22ch; }
 
 /* ---------- repair (pinned) ---------- */
@@ -682,8 +682,10 @@ main, .foot { overflow-x: clip; }
   .chip { padding: 9px 12px; font-size: .76rem; }
   .chip small { font-size: .66rem; }
   .stats { gap: 10px; }
-  .stat { min-height: 170px; padding: 18px; }
-  .stat__label { font-size: .84rem; }
+  .stat { min-height: 168px; padding: 18px 16px; gap: 18px; }
+  .stat__num { font-stretch: 100%; font-variation-settings: "wdth" 100; font-size: clamp(1.9rem, 9.4vw, 2.5rem); letter-spacing: -.02em; gap: 4px 6px; }
+  .stat__num small { font-size: .36em; }
+  .stat__label { font-size: .84rem; line-height: 1.45; }
   .svc__link { grid-template-columns: 40px minmax(0, 1fr); gap: 6px 16px; padding: 22px 4px; }
   .svc__ico { width: 36px; height: 36px; grid-row: span 2; }
   .svc__desc { grid-column: 2; grid-row: 2; font-size: .88rem; }
